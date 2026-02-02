@@ -32,8 +32,6 @@ Download all required OVA files sequentially to improve reliability.
 Avoid downloading multiple files at once on slower connections.  
 After deployment, use the Ubuntu VM to verify pfSense updates if required.
 
-![Step 1](images/img_01.png)
-
 
 
 ## Step 2 – Import pfSense Appliance
@@ -50,23 +48,19 @@ Inside the import window:
 - Select your desired base folder
 - Click **Import**
 
-![Step 3](images/img_02.png)
-
-
 
 ## Step 4 – Monitor Import Progress
 
 Wait for the import process to complete. A progress bar will display during this time.
 
-![Step 4](images/img_03.png)
-
+<img src="images/img_2.png" width="600">
 
 
 ## Step 5 – Confirm VM Appears
 
 Verify the pfSense VM is now visible in the VirtualBox manager.
 
-![Step 5](images/img_04.png)
+<img src="images/img_3.png" width="600">
 
 
 
@@ -75,7 +69,7 @@ Verify the pfSense VM is now visible in the VirtualBox manager.
 Before starting the VM, open the settings to confirm proper network configuration.  
 Correct settings ensure communication between all lab machines.
 
-![Step 6](images/img_05.png)
+<img src="images/img_4.png" width="600">
 
 
 
@@ -92,14 +86,14 @@ Set to:
 - Internal Network → **TestNet**
 - Advanced → Allow VMs
 
-![Step 7a](images/img_06.png)  
-![Step 7b](images/img_07.png)
+<img src="images/img_5.png" width="600">
+<img src="images/img_6.png" width="600">
 
 ### Additional Requirement
 For pfSense only:
 - Promiscuous Mode → Allow All
 
-![Step 7c](images/img_08.png)
+<img src="images/img_7.png" width="600">
 
 
 
@@ -107,7 +101,7 @@ For pfSense only:
 
 Start the VM from the VirtualBox interface.
 
-![Step 8](images/img_9.png)
+<img src="images/img_8.png" width="600">
 
 
 
@@ -120,7 +114,7 @@ After boot:
 
 This confirms proper gateway configuration.
 
-
+<img src="images/img_9.png" width="600">
 
 # Kali Linux Deployment
 
@@ -145,9 +139,9 @@ Wait until the Kali login screen appears.
 
 ## Step 12 – Log In
 
-Use the provided credentials and open a terminal.
+Enter credentials and open a terminal.
 
-
+<img src="images/img_11.png" width="600">
 
 ## Step 13 – Verify IP Address
 
@@ -157,7 +151,7 @@ Run:
 
 Confirm the VM receives an IP address from your local subnet.
 
-
+<img src="images/img_12.png" width="600">
 
 # Ubuntu Deployment
 
@@ -165,16 +159,16 @@ Confirm the VM receives an IP address from your local subnet.
 
 ## Step 14 – Import Ubuntu Appliance
 
-Import `VM3_Ubuntu.ova`.
+Import `VM3_Ubuntu.ova`, repeat steps 3-8
 
-Network setting:
+In step 8:
 - Adapter 1 → Internal Network (TestNet)
 
 
 
 ## Step 15 – Log In
 
-Enter the provided username and password.
+Enter credentials and log in.
 
 
 
@@ -182,6 +176,7 @@ Enter the provided username and password.
 
 Click **Show Applications** on the desktop.
 
+<img src="images/img_14.png" width="600">
 
 
 ## Step 17 – Launch Terminal
@@ -198,6 +193,7 @@ Run:
 
 Confirm the VM is on the same subnet as the pfSense LAN interface.
 
+<img src="images/img_16.png" width="600">
 
 
 # Debian Deployment
@@ -206,9 +202,9 @@ Confirm the VM is on the same subnet as the pfSense LAN interface.
 
 ## Step 19 – Import Debian Appliance
 
-Import `VM4_Debian.ova`.
+Import `VM4_Debian.ova`, repeat steps 3-8
 
-Network setting:
+In step 8, Network setting:
 - Adapter 1 → Internal Network (TestNet)
 
 
@@ -221,7 +217,7 @@ Wait for the login screen to appear.
 
 ## Step 21 – Log In
 
-Enter the provided credentials.
+Enter credentials.
 
 
 
@@ -245,6 +241,7 @@ Run:
 
 Confirm the VM is within the same internal subnet.
 
+<img src="images/img_20.png" width="600">
 
 
 ## Step 25 – Environment Ready
