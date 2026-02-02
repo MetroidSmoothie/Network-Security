@@ -231,7 +231,7 @@ Click **Show Applications**.
 
 Open a terminal session.
 
-
+<img src="images/img_19.png" width="600">
 
 ## Step 24 – Validate IP Address
 
